@@ -1,0 +1,49 @@
+	.tst-tabbar-wrapper {
+		width : 300px;
+		text-wrap: nowrap;
+		text-overflow : ellipsis;
+		position: relative;
+	}
+
+	.tst-gutter {
+		width:10px;
+		height:100%;
+		background-color:grey;
+		position: absolute;
+		top:0px;
+		right:0px;
+		cursor : col-resize;
+	}
+
+	
+	.tst-submenu {
+		margin-left: 5px;
+		border-left: 1px solid #bbb;
+		padding-left: 10px;
+	}
+
+	.tst-tabicon {
+		position: relative;
+		display: inline-block;
+	}
+
+	.tst-tabicon svg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+
+	.tst-tabicon img {
+		transition: filter 0.3s ease;
+	}
+
+	.tst-tabicon svg:hover {
+		opacity: 1;
+	}
+
+	.tst-tabicon img:hover {
+		filter: brightness(0.7);
+	}
+
